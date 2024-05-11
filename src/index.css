@@ -3,33 +3,50 @@
 @tailwind utilities;
 
 @layer components {
+
+  h1 {
+    @apply font-[500] text-[56px] leading-[1] tracking-tight text-dark text-center;
+  }
+
+  h2 {
+    @apply font-[500] text-[36px] leading-[1] tracking-tight text-dark text-center;
+  }
+
+  h3 {
+    @apply font-[500] text-[24px] leading-[1.2] tracking-tight text-dark;
+  }
+
   .body-text {
-    @apply font-[300] text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1vw] leading-[1.4] text-dark;
+    @apply text-[16px] leading-[1.2] tracking-wide text-dark text-center;
   }
 
   .navbar-text {
-    @apply font-[300] text-[4vw] sm:text-[3vw] md:text-[2vw] lg:text-[1vw] leading-[1.4] text-dark;
+    @apply body-text text-dark;
   }
 
-  .a-hover {
+  .a:hover {
     @apply text-accent transition ease-in-out duration-300 cursor-pointer;
   }
 
+  .sd-card {
+    @apply bg-white rounded-3xl;
+  }
+
+  .cta-button {
+    @apply bg-dark text-white body-text p-6 rounded-full;
+  }
+
+  .primary-button {
+    @apply bg-dark text-white body-text p-4 rounded-full;
+  }
+
+  .secondary-button {
+    @apply bg-white border border-dark text-dark body-text p-3 rounded-full;
+  }
 }
 
 body {
   margin: 0;
-  font-family: 'Nunito Sans', sans-serif;
-  background: #EDEBE9;
-}
-
-nav {
-  padding: 1.5rem 2rem;
-  position: sticky;
-  top: 0;
-  transition: transform 350ms ease-in;
-}
-
-nav.nav-bar--hidden {
-  transform: translateY(-100%);
+  font-family: 'Manrope', sans-serif;
+  background: #f6f1ed;
 }
