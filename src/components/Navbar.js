@@ -35,7 +35,7 @@ export default function Navbar() {
         </div>
       </nav>
       <div
-        className={'fixed bottom-4 right-4 p-2 w-fit rounded-full bg-dark text-light ' + (scroll ? 'fixed' : 'hidden')}
+        className={'fixed bottom-6 right-4 p-2 w-fit rounded-full bg-dark text-light ' + (scroll ? 'fixed' : 'hidden')}
       >
         <IoArrowUp className="text-4xl" />
       </div>

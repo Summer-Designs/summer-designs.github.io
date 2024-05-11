@@ -18,7 +18,7 @@ export default function Footer() {
 
       <Socials />
 
-      <div className="flex items-center justify-center p-4">Copyright © 2024</div>
+      <div className="flex items-center justify-center p-6">Copyright © 2024</div>
     </>
   );
 }

@@ -22,7 +22,7 @@ export default function Homescreen() {
           <div className="body-text my-8">
             We create products that focuses on the user's needs and fits into the product strategy.
           </div>
-          <button className="w-full cta-button">GET IN TOUCH</button>
+          <button className="w-full md:w-1/2 cta-button">GET IN TOUCH</button>
         </div>
 
         <Socials />
@@ -52,7 +52,7 @@ export default function Homescreen() {
           </div>
         </div>
         <div className="h-96 bg-cover bg-center rounded-3xl" style={{ backgroundImage: "url('" + OurPic + "')" }}></div>
-        <div className="flex flex-col gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="sd-card p-8 flex flex-col text-left gap-2">
             <div className="uppercase text-gray">Years of Experience</div>
             <h2 className="text-left">0</h2>
