@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d3a045d8.css",
+    "main.js": "/static/js/main.6987373b.js",
+    "static/js/453.77430dfc.chunk.js": "/static/js/453.77430dfc.chunk.js",
+    "static/media/Work.jpg": "/static/media/Work.eda908f7663e224e7eb6.jpg",
+    "static/media/Us.JPG": "/static/media/Us.95047ffc5bcae31fcc90.JPG",
+    "static/media/Article.webp": "/static/media/Article.406e5958c0e98e141d12.webp",
+    "static/media/Illustration.webp": "/static/media/Illustration.9298e3a8cd20e42de26e.webp",
+    "static/media/Framer.webp": "/static/media/Framer.b6764bde6ad97eb44452.webp",
+    "static/media/Logo.svg": "/static/media/Logo.fe55568b305e8ed2d46bac2a93b39ac2.svg",
+    "index.html": "/index.html",
+    "static/media/Branding.webp": "/static/media/Branding.eaa4e6665db420e5b84b.webp",
+    "static/media/UIUX.webp": "/static/media/UIUX.aae70c8bcc4a0ced8179.webp",
+    "main.d3a045d8.css.map": "/static/css/main.d3a045d8.css.map",
+    "main.6987373b.js.map": "/static/js/main.6987373b.js.map",
+    "453.77430dfc.chunk.js.map": "/static/js/453.77430dfc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3a045d8.css",
+    "static/js/main.6987373b.js"
+  ]
+}
