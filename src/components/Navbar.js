@@ -36,7 +36,7 @@ export default function Navbar() {
       </nav>
       <div
         className={
-          'fixed bottom-6 md:bottom-8 right-4 md:right-10 p-2 md:p-4 w-fit rounded-full bg-dark text-light cursor-n-resize ' +
+          'fixed bottom-6 md:bottom-8 right-4 md:right-10 p-2 md:p-4 w-fit rounded-full bg-dark text-light cursor-alias ' +
           (scroll ? 'fixed' : 'hidden')
         }
         onClick={() => {

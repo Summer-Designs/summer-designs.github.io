@@ -18,7 +18,7 @@ export default function Footer() {
             });
           }}
         >
-          <div className="text-white flex flex-row justify-center items-center gap-2 cursor-n-resize">
+          <div className="text-white flex flex-row justify-center items-center gap-2 cursor-alias">
             Back to top <IoArrowUpCircleOutline />
           </div>
         </div>
