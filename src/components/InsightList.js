@@ -7,13 +7,14 @@ export default function InsightList() {
       {insightListData.map(
         ([title, description, url, date, showHomeScreen]) =>
           showHomeScreen && (
-            <div className="sd-card p-4 flex flex-col">
+            <div className="sd-card p-4 flex flex-col md:flex-row gap-2 md:gap-2">
               <div
-                className="h-80 mb-4 bg-cover bg-center rounded-2xl"
+                className="h-80 md:h-auto md:w-3/5 bg-cover bg-center rounded-2xl"
                 style={{ backgroundImage: "url('" + url + "')" }}
               ></div>
-              <div className="p-3 flex flex-col text-left gap-4">
-                <h3>{title}</h3>
+              <div className="p-3 flex flex-col text-left gap-4 md:gap-2">
+                <h3 className="md:hidden">{title}</h3>
+                <h4 className="hidden md:block">{title}</h4>
                 <div className="text-gray">{description.substring(0, 130) + '...'}</div>
                 <div className="text-gray/50 mt-2">{date}</div>
               </div>

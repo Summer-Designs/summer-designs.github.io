@@ -18,8 +18,8 @@ export default function Navbar() {
     <>
       <nav
         className={
-          'sticky top-4 rounded-full bg-white p-4 px-6 ' +
-          (scroll ? 'drop-shadow-xl ease-in duration-300' : 'drop-shadow-none ease-out duration-300')
+          'sticky top-4 md:top-6 rounded-full bg-white p-4 pl-6 ' +
+          (scroll ? 'drop-shadow-xl lg:drop-shadow-2xl ease-in duration-300' : 'drop-shadow-none ease-out duration-300')
         }
       >
         <div className="navbar-text flex flex-row justify-between items-center w-full">
@@ -27,15 +27,24 @@ export default function Navbar() {
             <Hamburger size={17} toggled={isOpen} toggle={setOpen} />
             MENU
           </div>
-          <Link to="/" className="flex flex-row items-center text-accent gap-2">
+          <Link to="/" className="flex flex-row items-center text-accent gap-2 ml-16">
             <img src={logo} className="w-10" alt="Logo" />
             <span className="hidden md:flex font-[600]">SUMMERDESIGNS</span>
           </Link>
-          <button className="hidden md:flex w-fit secondary-button">GET IN TOUCH</button>
+          <button className="hidden md:flex px-6 secondary-button">CONTACT US</button>
         </div>
       </nav>
       <div
-        className={'fixed bottom-6 right-4 p-2 w-fit rounded-full bg-dark text-light ' + (scroll ? 'fixed' : 'hidden')}
+        className={
+          'fixed bottom-6 md:bottom-8 right-4 md:right-10 p-2 md:p-4 w-fit rounded-full bg-dark text-light cursor-n-resize ' +
+          (scroll ? 'fixed' : 'hidden')
+        }
+        onClick={() => {
+          window.scroll({
+            top: 0,
+            behavior: 'smooth',
+          });
+        }}
       >
         <IoArrowUp className="text-4xl" />
       </div>

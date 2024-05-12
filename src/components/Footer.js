@@ -7,10 +7,18 @@ export default function Footer() {
     <>
       <div className="sd-card p-4 bg-dark text-center">
         <h2 className="p-2 text-white">Ready to Collab?</h2>
-        <div className="mb-4 text-white/50">The best of us to bring your product stand-out</div>
-        <button className="w-1/2 secondary-button bg-light mt-4">GET IN TOUCH</button>
-        <div className="p-4 mt-4 body-text flex flex-col text-center gap-8">
-          <div className="text-white flex flex-row justify-center items-center gap-2">
+        <div className="mb-4 mt-1 text-white/50">Let's drop your ideas here</div>
+        <button className="w-1/2 md:w-60 secondary-button bg-light mt-4">CONTACT US</button>
+        <div
+          className="p-4 mt-4 w-fit mx-auto body-text flex flex-col text-center gap-8"
+          onClick={() => {
+            window.scroll({
+              top: 0,
+              behavior: 'smooth',
+            });
+          }}
+        >
+          <div className="text-white flex flex-row justify-center items-center gap-2 cursor-n-resize">
             Back to top <IoArrowUpCircleOutline />
           </div>
         </div>

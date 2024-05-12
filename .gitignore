@@ -24,3 +24,4 @@ yarn-error.log*
 
 # other files
 .prettierrc.js
+.vscode

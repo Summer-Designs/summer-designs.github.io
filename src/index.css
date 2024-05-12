@@ -5,15 +5,19 @@
 @layer components {
 
   h1 {
-    @apply font-[500] text-[56px] leading-[1] tracking-tight text-dark text-center;
+    @apply font-[500] text-[56px] leading-[1] tracking-tight md:text-[72px] md:tracking-tighter xl:text-[96px] text-dark text-center;
   }
 
   h2 {
-    @apply font-[500] text-[36px] leading-[1] tracking-tight text-dark text-center;
+    @apply font-[500] text-[36px] leading-[1] tracking-tight md:text-[48px] text-dark text-center;
   }
 
   h3 {
-    @apply font-[500] text-[24px] leading-[1.2] tracking-tight text-dark;
+    @apply font-[500] text-[24px] leading-[1.2] tracking-tight md:text-[34px] text-dark;
+  }
+
+  h4 {
+    @apply font-[500] text-[18px] leading-[1.2] tracking-tight md:text-[24px] text-dark;
   }
 
   .body-text {
