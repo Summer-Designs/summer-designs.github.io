@@ -2,32 +2,54 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Summer-Dreams-Sans";
+  src: url("../src/assets/fonts/SummerDreamSans.ttf");
+}
+
+@font-face {
+  font-family: "Summer-Wind";
+  src: url("../src/assets/fonts/SummerWind.ttf");
+}
+
 @layer components {
 
-  h1 {
-    @apply font-[500] text-[56px] leading-[1] tracking-tight md:text-[72px] md:tracking-tighter xl:text-[96px] text-dark text-center;
+  body {
+    @apply text-white bg-black m-0;
+    font-family: "Circe", "system-ui";
   }
 
-  h2 {
-    @apply font-[500] text-[36px] leading-[1] tracking-tight md:text-[48px] text-dark text-center;
+  /* Typography  */
+  h1,
+  .h1 {
+    @apply font-summerDreamsSans text-[18vw] leading-[15vw] font-[400] tracking-tight;
   }
 
-  h3 {
-    @apply font-[500] text-[24px] leading-[1.2] tracking-tight md:text-[34px] text-dark;
+  h2,
+  .h2 {
+    @apply text-[72px] leading-[72px] font-[400] text-center;
   }
 
-  h4 {
-    @apply font-[500] text-[18px] leading-[1.2] tracking-tight md:text-[24px] text-dark;
+  h3,
+  .h3 {
+    @apply font-summerWind text-[94px] leading-[74px] text-center;
+  }
+
+  h4,
+  .h4 {
+    @apply text-[48px] leading-[48px] font-[400] text-center;
+  }
+
+  h5,
+  .h5 {
+    @apply text-[28px] leading-[32px] font-[400] text-center;
   }
 
   .body-text {
-    @apply text-[16px] leading-[1.2] tracking-wide text-dark text-center;
+    @apply text-[16px] leading-[16px];
   }
 
-  .navbar-text {
-    @apply body-text text-dark;
-  }
-
+  /* Links  */
   .a:hover {
     @apply text-accent transition ease-in-out duration-300 cursor-pointer;
   }
@@ -36,21 +58,35 @@
     @apply bg-white rounded-3xl;
   }
 
-  .cta-button {
-    @apply bg-dark text-white body-text p-6 rounded-full;
+  /* Buttons  */
+  .primary-button {
+    @apply bg-white w-20 h-20 rounded-full font-summerDreamsSans text-[4px] pb-3 pt-4 px-8;
   }
 
-  .primary-button {
-    @apply bg-dark text-white body-text p-4 rounded-full;
+  .primary-button:hover {
+    @apply bg-white min-w-20 w-fit h-20 rounded-full font-summerDreamsSans text-[20px] leading-[24px] pb-3 pt-4 px-8 text-black transition-all ease-in duration-200;
   }
 
   .secondary-button {
-    @apply bg-white border border-dark text-dark body-text p-3 rounded-full;
+    @apply bg-white w-12 h-12 rounded-full font-summerDreamsSans text-[0px] pb-3 pt-4 px-4;
+  }
+
+  .secondary-button:hover {
+    @apply bg-white min-w-12 w-fit h-12 rounded-full font-summerDreamsSans text-[14px] leading-[16px] pb-3 pt-4 px-8 text-black transition-all ease-in duration-200;
   }
 }
 
-body {
-  margin: 0;
-  font-family: 'Manrope', sans-serif;
-  background: #f6f1ed;
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border: 2px solid #555555;
 }

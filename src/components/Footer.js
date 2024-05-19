@@ -1,32 +1,59 @@
 import React from 'react';
-import Socials from './Socials';
-import { IoArrowUpCircleOutline } from 'react-icons/io5';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logos/Logo.svg';
 
 export default function Footer() {
   return (
     <>
-      <div className="sd-card p-4 bg-dark text-center">
-        <h2 className="p-2 text-white">Ready to Collab?</h2>
-        <div className="mb-4 mt-1 text-white/50">Let's drop your ideas here</div>
-        <button className="w-1/2 md:w-60 secondary-button bg-light mt-4">CONTACT US</button>
-        <div
-          className="p-4 mt-4 w-fit mx-auto body-text flex flex-col text-center gap-8"
-          onClick={() => {
-            window.scroll({
-              top: 0,
-              behavior: 'smooth',
-            });
-          }}
-        >
-          <div className="text-white flex flex-row justify-center items-center gap-2 cursor-alias">
-            Back to top <IoArrowUpCircleOutline />
+      <div className="py-16 px-24 flex flex-col">
+        <div className="flex flex-row">
+          <div className="w-1/2 flex flex-col gap-8">
+            <div>
+              <Link to="#" className="flex flex-row items-center text-white gap-4">
+                <img src={logo} className="w-18 rotate-45 py-8" alt="Logo" />
+                <span className="font-summerDreamsSans h5">SummerDesigns</span>
+              </Link>
+            </div>
+
+            <div className="flex flex-row justify-between">
+              <div className="w-1/2 flex flex-col justify-between">
+                <div>
+                  Bengaluru <br /> KA
+                </div>
+                <div>(+91) 98 98 219 779</div>
+              </div>
+              <div className="w-1/2 flex flex-col gap-4">
+                <div className="text-white/40">Follow</div>
+                <div className="flex flex-col">
+                  <div className="">Linkedin</div>
+                  <div className="">Instagram</div>
+                  <div className="">Dribbble</div>
+                  <div className="">Youtube</div>
+                  <div className="">X</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2">
+            <div className="flex flex-col h4 text-left gap-3 py-8">
+              <div className="">Service</div>
+              <div className="">Work</div>
+              <div className="">About</div>
+              <div className="">Blog</div>
+              <div className="">Contact</div>
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row items-center">
+          <div className="w-1/2">
+            <button className="secondary-button">Let's Discuss about your brand</button>
+          </div>
+          <div className="flex flex-row gap-8 w-1/2">
+            <div>2024 © The SummerDesigns</div>
+            <div>Privacy & Cookie Policy</div>
           </div>
         </div>
       </div>
-
-      <Socials />
-
-      <div className="flex items-center justify-center p-6">Copyright © 2024</div>
     </>
   );
 }
