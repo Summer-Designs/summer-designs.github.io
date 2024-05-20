@@ -15,8 +15,8 @@
 @layer components {
 
   body {
-    @apply text-white bg-black m-0;
-    font-family: "Circe", "system-ui";
+    @apply text-white bg-black m-0 selection:bg-accent/50 selection:text-white;
+    font-family: "Manrope", "system-ui";
   }
 
   /* Typography  */
@@ -27,26 +27,27 @@
 
   h2,
   .h2 {
-    @apply text-[72px] leading-[72px] font-[400] text-center;
+    @apply text-[44px] leading-[48px] md:text-[56px] md:leading-[60px] lg:text-[72px] lg:leading-[72px] font-[500] tracking-tight text-center;
   }
 
   h3,
   .h3 {
-    @apply font-summerWind text-[94px] leading-[74px] text-center;
+    @apply font-summerWind text-[58px] leading-[55px] md:text-[94px] md:leading-[74px] text-center;
   }
 
   h4,
   .h4 {
-    @apply text-[48px] leading-[48px] font-[400] text-center;
+    @apply font-[400] text-[32px] leading-[38px] md:text-[40px] md:leading-[44px] lg:text-[48px] lg:leading-[48px] text-center;
   }
 
   h5,
   .h5 {
-    @apply text-[28px] leading-[32px] font-[400] text-center;
+    @apply font-[300] text-[18px] leading-[26px] md:text-[22px] md:leading-[26px] lg:text-[28px] lg:leading-[36px] text-center;
   }
 
   .body-text {
-    @apply text-[16px] leading-[16px];
+    @apply font-[300] text-[14px] leading-[16px] md:text-[16px] md:leading-[18px];
+
   }
 
   /* Links  */
@@ -54,17 +55,13 @@
     @apply text-accent transition ease-in-out duration-300 cursor-pointer;
   }
 
-  .sd-card {
-    @apply bg-white rounded-3xl;
-  }
-
   /* Buttons  */
   .primary-button {
-    @apply bg-white w-20 h-20 rounded-full font-summerDreamsSans text-[4px] pb-3 pt-4 px-8;
+    @apply bg-white w-20 h-20 rounded-full font-summerDreamsSans text-[1px] p-8;
   }
 
   .primary-button:hover {
-    @apply bg-white min-w-20 w-fit h-20 rounded-full font-summerDreamsSans text-[20px] leading-[24px] pb-3 pt-4 px-8 text-black transition-all ease-in duration-200;
+    @apply bg-white min-w-20 w-fit h-20 rounded-full font-summerDreamsSans body-text p-8 text-black transition-all ease-in duration-200;
   }
 
   .secondary-button {

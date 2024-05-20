@@ -44,9 +44,13 @@ export default function Navbar() {
           staggerChildren: 0.05,
         }}
       >
-        <div className="navbar-text flex flex-row justify-between items-center text-white md:px-14">
+        <div className="navbar-text flex flex-row justify-between items-center text-white lg:px-14">
           <Link to="/" className="flex flex-row items-center text-accent gap-2">
-            <img src={logo} className="w-18" alt="Logo" />
+            <img
+              src={logo}
+              className="w-18 hover:rotate-45 transition-all delay-100 duration-150 ease-in-out hover:transition-all hover:duration-150 hover:delay-100 hover:ease-in-out"
+              alt="Logo"
+            />
           </Link>
           <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
         </div>
