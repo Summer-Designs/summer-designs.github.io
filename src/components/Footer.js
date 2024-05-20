@@ -20,16 +20,26 @@ export default function Footer() {
                 <div>
                   Bengaluru <br /> KA
                 </div>
-                <div>(+91) 98 98 219 779</div>
+                <a href="tel:09898219779">(+91) 98 98 219 779</a>
               </div>
               <div className="w-1/2 flex flex-col gap-4">
                 <div className="text-white/40">Follow</div>
                 <div className="flex flex-col">
-                  <div className="">Linkedin</div>
-                  <div className="">Instagram</div>
-                  <div className="">Dribbble</div>
-                  <div className="">Youtube</div>
-                  <div className="">X</div>
+                  <a href="https://www.linkedin.com/company/summerdesigns/" className="">
+                    Linkedin
+                  </a>
+                  <a href="https://www.instagram.com/thesummerdesign/" className="">
+                    Instagram
+                  </a>
+                  <a href="https://www.instagram.com/thesummerdesign/" className="">
+                    Dribbble
+                  </a>
+                  <a href="" className="">
+                    Youtube
+                  </a>
+                  <a href="https://www.x.com/thesummerdesign/" className="">
+                    X
+                  </a>
                 </div>
               </div>
             </div>
