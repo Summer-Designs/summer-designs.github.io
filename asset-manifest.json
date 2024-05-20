@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.adf50c0e.css",
-    "main.js": "/static/js/main.233084fa.js",
+    "main.css": "/static/css/main.2435889c.css",
+    "main.js": "/static/js/main.b9fa1dbc.js",
     "static/js/453.77430dfc.chunk.js": "/static/js/453.77430dfc.chunk.js",
+    "static/media/background.mp4": "/static/media/background.31eff2e2a60dfd6c4c82.mp4",
     "static/media/Work.jpg": "/static/media/Work.eda908f7663e224e7eb6.jpg",
-    "static/media/Us.JPG": "/static/media/Us.95047ffc5bcae31fcc90.JPG",
-    "static/media/Article.webp": "/static/media/Article.406e5958c0e98e141d12.webp",
-    "static/media/Illustration.webp": "/static/media/Illustration.9298e3a8cd20e42de26e.webp",
-    "static/media/Framer.webp": "/static/media/Framer.b6764bde6ad97eb44452.webp",
-    "static/media/Logo.svg": "/static/media/Logo.fe55568b305e8ed2d46bac2a93b39ac2.svg",
+    "static/media/SummerWind.ttf": "/static/media/SummerWind.bcc2913af2daa3706852.ttf",
+    "static/media/SummerDreamSans.ttf": "/static/media/SummerDreamSans.f140242b3eefdc1dcb61.ttf",
+    "static/media/Logo.svg": "/static/media/Logo.7891a5dd6a92dc7e1d5ce878e8de1e5a.svg",
     "index.html": "/index.html",
-    "static/media/Branding.webp": "/static/media/Branding.eaa4e6665db420e5b84b.webp",
-    "static/media/UIUX.webp": "/static/media/UIUX.aae70c8bcc4a0ced8179.webp",
-    "main.adf50c0e.css.map": "/static/css/main.adf50c0e.css.map",
-    "main.233084fa.js.map": "/static/js/main.233084fa.js.map",
+    "static/media/SCircle.svg": "/static/media/SCircle.d0ff180056de1520b20ae846a432d6c4.svg",
+    "main.2435889c.css.map": "/static/css/main.2435889c.css.map",
+    "main.b9fa1dbc.js.map": "/static/js/main.b9fa1dbc.js.map",
     "453.77430dfc.chunk.js.map": "/static/js/453.77430dfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.adf50c0e.css",
-    "static/js/main.233084fa.js"
+    "static/css/main.2435889c.css",
+    "static/js/main.b9fa1dbc.js"
   ]
 }
