@@ -52,19 +52,25 @@ const cards = [
   {
     id: 3,
     testimonial:
-      'Superb service one can ever expect. The developers are very professional, expert in their domain. I have got my logo designed by them, my visiting cards, many of my advertisements and other stuffs. They are very hard working and very dedicated. Wishing them a great success.',
-    name: 'Kunal Ambasta',
+      'Thanks a lot sir for making my day through your designing . It is the best work till date i have seen. I could have rated you more if there were more stars. 🙌 Hats off to your work.',
+    name: 'Amisha Sood',
   },
   {
     id: 4,
     testimonial:
-      'Superb service one can ever expect. The developers are very professional, expert in their domain. I have got my logo designed by them, my visiting cards, many of my advertisements and other stuffs. They are very hard working and very dedicated. Wishing them a great success.',
-    name: 'Kunal Ambasta',
+      'The website design is stunning and aligns perfectly. Thank you so much The Summer Designs for being very responsive and keeping us updated at every phase. I highly recommend this platform to anyone looking for a creative and reliable professional.',
+    name: 'Tina Jadav',
   },
   {
     id: 5,
     testimonial:
-      'Superb service one can ever expect. The developers are very professional, expert in their domain. I have got my logo designed by them, my visiting cards, many of my advertisements and other stuffs. They are very hard working and very dedicated. Wishing them a great success.',
-    name: 'Kunal Ambasta',
+      'Thoroughly loved the logo designed by them. It really captured the essence and true meaning behind our brand. Thank you to the team!',
+    name: 'Kalagee',
+  },
+  {
+    id: 6,
+    testimonial:
+      'Working with summer design was a game-changer for our social media strategy. Their creativity, attention to detail, and strategic approach resulted in a significant boost in engagement and brand visibility. Highly recommend their services!',
+    name: 'Rajvi Patel',
   },
 ];
