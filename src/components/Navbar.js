@@ -55,24 +55,27 @@ export default function Navbar() {
           <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
           {isOpen && (
             <motion.div
-              className={'fixed right-[100px] top-[70px] rounded-3xl bg-light/80 text-dark'}
+              className={'fixed right-[50px] top-[70px] lg:right-[100px] lg:top-[70px] group'}
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.3, ease: 'backIn' }}
               exit={{ opacity: 0, scale: 0.1 }}
             >
-              <div className="flex flex-col h5 text-left gap-3 p-8">
-                <a href="/services" className="">
+              <div className="flex flex-col h5 text-left gap-3 p-8 group-hover:bg-light bg-light/80 text-dark rounded-3xl">
+                <a href="/services" className="hover:text-accent">
                   Service
                 </a>
-                <a href="/work" className="">
+                <a href="/work" className="hover:text-accent">
                   Work
                 </a>
-                <a href="/about" className="">
+                <a href="/about" className="hover:text-accent">
                   About
                 </a>
-                <a href="/contact" className="">
+                <a href="/contact" className="hover:text-accent">
                   Contact Us
+                </a>
+                <a href="/contact" className="body-text primary-button hover:text-accent">
+                  Let's Start a Project
                 </a>
               </div>
             </motion.div>

@@ -7,6 +7,7 @@ module.exports = {
       fontFamily: {
         summerDreamsSans: ['"Summer-Dreams-Sans"', 'sans-serif'],
         summerWind: ['"Summer-Wind"', 'sans-serif'],
+        spaceGrotesk: ['"Space-Grotesk"', 'sans-serif'],
       },
     },
     colors: {

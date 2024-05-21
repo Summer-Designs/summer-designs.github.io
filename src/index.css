@@ -12,11 +12,16 @@
   src: url("../src/assets/fonts/SummerWind.ttf");
 }
 
+@font-face {
+  font-family: "Space-Grotesk";
+  src: url("../src/assets/fonts/SpaceGrotesk.ttf");
+}
+
+
 @layer components {
 
   body {
-    @apply text-white bg-black m-0 selection:bg-accent/50 selection:text-white;
-    font-family: "Manrope", "system-ui";
+    @apply font-spaceGrotesk text-white bg-black m-0 selection:bg-accent/50 selection:text-white;
   }
 
   /* Typography  */
@@ -27,17 +32,17 @@
 
   h2,
   .h2 {
-    @apply text-[44px] leading-[48px] md:text-[56px] md:leading-[60px] lg:text-[72px] lg:leading-[72px] font-[500] tracking-tight text-center;
+    @apply font-[500] text-[44px] leading-[48px] md:text-[56px] md:leading-[60px] lg:text-[72px] lg:leading-[72px] tracking-tight text-center;
   }
 
   h3,
   .h3 {
-    @apply font-summerWind text-[58px] leading-[55px] md:text-[94px] md:leading-[74px] text-center;
+    @apply font-[600] text-[58px] leading-[55px] md:text-[94px] md:leading-[74px] tracking-tight text-center;
   }
 
   h4,
   .h4 {
-    @apply font-[400] text-[32px] leading-[38px] md:text-[40px] md:leading-[44px] lg:text-[48px] lg:leading-[48px] text-center;
+    @apply font-[500] text-[32px] leading-[38px] md:text-[40px] md:leading-[44px] lg:text-[48px] lg:leading-[48px] text-center;
   }
 
   h5,

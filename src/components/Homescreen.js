@@ -38,11 +38,9 @@ export default function Homescreen() {
       </div>
 
       <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/40">
-        <AnimatedTitle
-          once
-          display="block"
+        <TextTypingAnimation
           text="Dear Startups, You will face a lot of challenges. We'll be there."
-          className="h4 text-white text-left"
+          applyClass="h4 w-3/4 text-white text-left w-full"
         />
         <div className="text-right w-full">*But we don't design on CANVA</div>
         <div className="flex flex-col lg:flex-row justify-end w-full lg:px-16 mt-8 gap-12 lg:gap-24">
