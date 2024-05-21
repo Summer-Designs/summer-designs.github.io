@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.f847f447.css",
-    "main.js": "/static/js/main.fa9c70be.js",
+    "main.css": "/static/css/main.3b15f926.css",
+    "main.js": "/static/js/main.de628f78.js",
     "static/js/453.77430dfc.chunk.js": "/static/js/453.77430dfc.chunk.js",
     "static/media/background.mp4": "/static/media/background.31eff2e2a60dfd6c4c82.mp4",
     "static/media/Work.jpg": "/static/media/Work.eda908f7663e224e7eb6.jpg",
+    "static/media/SpaceGrotesk.ttf": "/static/media/SpaceGrotesk.5771010795a77ba7459b.ttf",
     "static/media/SummerWind.ttf": "/static/media/SummerWind.bcc2913af2daa3706852.ttf",
     "static/media/SummerDreamSans.ttf": "/static/media/SummerDreamSans.f140242b3eefdc1dcb61.ttf",
     "static/media/Logo.svg": "/static/media/Logo.7891a5dd6a92dc7e1d5ce878e8de1e5a.svg",
     "index.html": "/index.html",
     "static/media/SCircle.svg": "/static/media/SCircle.d0ff180056de1520b20ae846a432d6c4.svg",
-    "main.f847f447.css.map": "/static/css/main.f847f447.css.map",
-    "main.fa9c70be.js.map": "/static/js/main.fa9c70be.js.map",
+    "main.3b15f926.css.map": "/static/css/main.3b15f926.css.map",
+    "main.de628f78.js.map": "/static/js/main.de628f78.js.map",
     "453.77430dfc.chunk.js.map": "/static/js/453.77430dfc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f847f447.css",
-    "static/js/main.fa9c70be.js"
+    "static/css/main.3b15f926.css",
+    "static/js/main.de628f78.js"
   ]
 }
