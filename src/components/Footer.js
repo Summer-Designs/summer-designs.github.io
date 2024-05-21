@@ -7,7 +7,7 @@ import { FiArrowUpRight } from 'react-icons/fi';
 export default function Footer() {
   return (
     <>
-      <div className="h-screenpy-16 px-8 md:px-16 py-8 lg:px-24 gap-8 md:gap-4 flex flex-col">
+      <div className="h-screenpy-16 px-8 md:px-16 py-8 mb-12 lg:px-24 gap-8 md:gap-4 flex flex-col">
         <Link to="#" className="flex lg:hidden">
           <span className="font-summerDreamsSans h5">SummerDesigns</span>
         </Link>

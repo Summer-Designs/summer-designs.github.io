@@ -15,7 +15,7 @@ export default function Homescreen() {
       <Navbar />
       <Banner />
 
-      <div className="w-fit mx-auto h-screen flex flex-col justify-center items-center">
+      <div className="w-fit mx-auto h-screen flex flex-col justify-center items-center py-24">
         <TextTypingAnimation
           text="The Summer Design is a creative agency that helps brands connect with people, through iconic design, animation and visual storytelling."
           applyClass="h2 w-3/4 text-white"
@@ -30,7 +30,7 @@ export default function Homescreen() {
           text="We work as a strategic, creative partner to our clients, helping to shape their brands, tell their stories and move their audiences. From global brands to ambitious startups, our clients all have one thing in common… Great taste in creative agencies!"
           applyClass="h5 w-3/4 text-white"
         />
-        <a href="https://calendly.com/thesummerdesign/1on1" className="primary-button">
+        <a href="https://calendly.com/thesummerdesign/1on1" className="primary-button mb-8">
           Book FREE 1 on 1
         </a>
       </div>
@@ -88,9 +88,9 @@ export default function Homescreen() {
         </div>
       </div>
 
-      <div className="w-fit mx-auto h-screen flex flex-col justify-center items-center">
+      <div className="w-fit py-28 mx-auto h-screen flex flex-col justify-center items-center">
         <TextTypingAnimation
-          text="We dedicatedly amplify the essence of your brand and strengthening the bond between you and your audience by crafting something extraordinary together."
+          text="We are committed to enhancing your brand's essence and fortifying the connection with your audience through collaborative efforts to create something remarkable."
           applyClass="h2 w-3/4 text-white"
         />
       </div>
@@ -106,7 +106,7 @@ export default function Homescreen() {
         <a href="https://calendly.com/thesummerdesign/1on1" className="primary-button">
           Book FREE 1 on 1
         </a>
-        <img alt="The SummerDesign Element" src={SCircle} className="-mt-12 -z-10" />
+        <img alt="The SummerDesign Element" src={SCircle} className="my-12 -z-10" />
       </div>
 
       <Footer />
