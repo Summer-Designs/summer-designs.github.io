@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logos/Logo.svg';
 import { Cross as Hamburger } from 'hamburger-react';
-// import { IoArrowUp } from 'react-icons/io5';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 const parentVariants = {
@@ -24,6 +23,7 @@ export default function Navbar() {
       setHidden(false);
     } else if (latest > 100 && latest > prev) {
       setHidden(true);
+      setOpen(false);
     }
   }
 
@@ -53,17 +53,17 @@ export default function Navbar() {
             />
           </Link>
           <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
-          {isOpen && (
+          {isOpen && !hidden && (
             <motion.div
-              className={'fixed right-[50px] top-[70px] lg:right-[100px] lg:top-[70px] group'}
+              className={'fixed z-50 right-[50px] top-[70px] lg:right-[100px] lg:top-[70px]'}
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, ease: 'backIn' }}
-              exit={{ opacity: 0, scale: 0.1 }}
+              transition={{ duration: 0.3, ease: 'backIn', staggerChildren: 0.25 }}
+              exit={{ opacity: 0, scale: 0 }}
             >
-              <div className="flex flex-col h5 text-left gap-3 p-8 group-hover:bg-light bg-light/80 text-dark rounded-3xl">
+              <div className="flex flex-col h5 text-left gap-3 p-8 bg-light/70 backdrop-blur-sm text-dark rounded-3xl">
                 <a href="/services" className="hover:text-accent">
-                  Service
+                  Services
                 </a>
                 <a href="/work" className="hover:text-accent">
                   Work
@@ -74,7 +74,7 @@ export default function Navbar() {
                 <a href="/contact" className="hover:text-accent">
                   Contact Us
                 </a>
-                <a href="/contact" className="body-text primary-button hover:text-accent">
+                <a href="/contact" className="body-text primary-button bg-accent text-white hover:bg-accentHover">
                   Let's Start a Project
                 </a>
               </div>

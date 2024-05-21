@@ -9,11 +9,13 @@ const Banner = () => {
         <h3 className="font-summerWind font-[400] z-10 mb-4">The</h3>
         <AnimatedTitle once display="grid" text="SUMMER DESIGNS." className="h1" />
       </h1>
-      <div className="bg-black/20 absolute top-0 left-0 w-screen h-screen"></div>
+      <div className="bg-black/70 absolute top-0 left-0 w-screen h-screen"></div>
       <video
         src={BackgroundVideo}
         autoPlay
         loop
+        muted
+        playsinline
         className="absolute -z-10 w-auto min-w-full min-h-full max-w-none"
       ></video>
     </div>

@@ -12,8 +12,6 @@ import HorizontalScrollCarousel from './animation/HorizontalScrollCarousel';
 export default function Homescreen() {
   return (
     <>
-      {/* <CustomCursor /> */}
-
       <Navbar />
       <Banner />
 
@@ -39,7 +37,7 @@ export default function Homescreen() {
 
       <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/40">
         <TextTypingAnimation
-          text="Dear Startups, You will face a lot of challenges. We'll be there."
+          text="Simply Share your vision, & will bring it to life."
           applyClass="h4 w-3/4 text-white text-left w-full"
         />
         <div className="text-right w-full">*But we don't design on CANVA</div>
@@ -100,7 +98,7 @@ export default function Homescreen() {
       <HorizontalScrollCarousel />
 
       <div className="w-fit mx-auto h-fit flex flex-col justify-center items-center gap-2 mt-48">
-        <AnimatedTitle once display="block" text="Your next design partner" className="h3" />
+        <AnimatedTitle once display="block" text="Your next design partner" className="h3 px-8" />
         <TextTypingAnimation
           text="Let's collaborate and craft something extraordinary together."
           applyClass="h5 w-3/4 text-white"

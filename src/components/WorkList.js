@@ -3,13 +3,13 @@ import { workListData } from '../data/WorkListData';
 
 export default function WorkList() {
   return (
-    <div className="grid grid-cols-2 gap-8 my-16 mx-24">
+    <div className="grid grid-cols-2 gap-8 my-16 mx-8 md:mx-16 lg:mx-24">
       {workListData.map(([tag, title, url, applyClass]) => (
         <div className={'flex flex-col ' + applyClass}>
-          <div className="relative h-96 overflow-hidden bg-cover bg-no-repeat rounded-3xl">
+          <div className="relative h-48 lg:h-96 overflow-hidden bg-no-repeat rounded-3xl">
             <img
               src={url}
-              class="w-max transition duration-300 ease-in-out hover:scale-110 hover:opacity-70"
+              class=" h-max transition duration-300 ease-in-out hover:scale-110 hover:opacity-70"
               alt="Work"
             />
           </div>

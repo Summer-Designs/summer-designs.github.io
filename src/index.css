@@ -57,24 +57,24 @@
 
   /* Links  */
   .a:hover {
-    @apply text-accent transition ease-in-out duration-300 cursor-pointer;
+    @apply text-accent cursor-pointer;
   }
 
   /* Buttons  */
   .primary-button {
-    @apply bg-white w-20 h-20 rounded-full font-summerDreamsSans text-[1px] p-8;
+    @apply bg-white min-w-20 w-fit h-20 rounded-full font-summerDreamsSans body-text p-8 text-black;
   }
 
   .primary-button:hover {
-    @apply bg-white min-w-20 w-fit h-20 rounded-full font-summerDreamsSans body-text p-8 text-black transition-all ease-in duration-200;
+    @apply bg-light;
   }
 
   .secondary-button {
-    @apply bg-white w-12 h-12 rounded-full font-summerDreamsSans text-[0px] pb-3 pt-4 px-4;
+    @apply bg-white text-black min-w-12 w-fit h-12 rounded-full p-2 px-4 body-text;
   }
 
   .secondary-button:hover {
-    @apply bg-white min-w-12 w-fit h-12 rounded-full font-summerDreamsSans text-[14px] leading-[16px] pb-3 pt-4 px-8 text-black transition-all ease-in duration-200;
+    @apply bg-light;
   }
 }
 
