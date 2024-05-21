@@ -53,27 +53,32 @@ export default function Navbar() {
             />
           </Link>
           <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
+          {isOpen && (
+            <motion.div
+              className={'fixed right-[100px] top-[70px] rounded-3xl bg-light/80 text-dark'}
+              initial={{ opacity: 0, scale: 0 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, ease: 'backIn' }}
+              exit={{ opacity: 0, scale: 0.1 }}
+            >
+              <div className="flex flex-col h5 text-left gap-3 p-8">
+                <a href="/services" className="">
+                  Service
+                </a>
+                <a href="/work" className="">
+                  Work
+                </a>
+                <a href="/about" className="">
+                  About
+                </a>
+                <a href="/contact" className="">
+                  Contact Us
+                </a>
+              </div>
+            </motion.div>
+          )}
         </div>
       </motion.nav>
-      {/* {isOpen && (
-        <motion.div
-          className={
-            'fixed bottom-6 md:bottom-8 right-4 md:right-10 p-2 md:p-4 w-fit rounded-full bg-white text-dark cursor-alias'
-          }
-          onClick={() => {
-            window.scroll({
-              top: 0,
-              behavior: 'smooth',
-            });
-          }}
-          initial={{ opacity: 0, scale: 0.1 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, ease: 'backIn' }}
-          exit={{ opacity: 0, scale: 0.1 }}
-        >
-          <IoArrowUp className="text-4xl" />
-        </motion.div>
-      )} */}
     </>
   );
 }

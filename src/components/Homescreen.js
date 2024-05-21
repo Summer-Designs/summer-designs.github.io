@@ -8,12 +8,11 @@ import Footer from './Footer';
 
 import SCircle from '../assets/imgs/SCircle.svg';
 import HorizontalScrollCarousel from './animation/HorizontalScrollCarousel';
-import CustomCursor from './animation/CustomCursor';
 
 export default function Homescreen() {
   return (
     <>
-      <CustomCursor />
+      {/* <CustomCursor /> */}
 
       <Navbar />
       <Banner />

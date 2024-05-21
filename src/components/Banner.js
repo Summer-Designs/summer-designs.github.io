@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="relative flex items-center justify-center h-screen overflow-hidden">
       <h1 className="z-10 w-fit mx-auto h-screen flex flex-col justify-center items-center">
-        <h3 className="z-10">The</h3>
+        <h3 className="z-10 mb-4">The</h3>
         <AnimatedTitle once display="grid" text="SUMMER DESIGNS." className="h1" />
       </h1>
       <div className="bg-black/20 absolute top-0 left-0 w-screen h-screen"></div>
