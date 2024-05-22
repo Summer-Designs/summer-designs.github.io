@@ -5,6 +5,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
 
 const parentVariants = {
+  initial: { y: -100, opacity: 0 },
   visible: { opacity: 1, y: 0 },
   hidden: { opacity: 0, y: '-4rem' },
 };
@@ -37,11 +38,13 @@ export default function Navbar() {
       <motion.nav
         className={'fixed top-4 rounded-full p-4 px-12 z-50 w-full'}
         variants={parentVariants}
+        initial={'initial'}
         animate={hidden ? 'hidden' : 'visible'}
         transition={{
           ease: [0.1, 0.25, 0.3, 1],
           duration: 0.6,
           staggerChildren: 0.05,
+          delay: 2,
         }}
       >
         <div className="navbar-text flex flex-row justify-between items-center text-white lg:px-14">

@@ -1,4 +1,4 @@
-import { motion, useInView, useAnimation, Variant } from 'framer-motion';
+import { motion, useInView, useAnimation } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 
 const defaultAnimations = {
@@ -11,14 +11,17 @@ const defaultAnimations = {
     y: 0,
     transition: {
       duration: 0.2,
+      staggerChildren: 0.1,
     },
   },
 };
 
+// eslint-disable-next-line
 type AnimatedTextProps = {
   text: string | string[],
   className?: string,
-  once?: Boolean,
+  once?: boolean,
+  delay?: number,
   display?: string,
   animation?: {
     hidden: Variant,
@@ -26,7 +29,7 @@ type AnimatedTextProps = {
   },
 };
 
-export const AnimatedText = ({ text, className, once, display, animation = defaultAnimations }: AnimatedTextProps) => {
+export const AnimatedText = ({ text, className, once, display, animation = defaultAnimations, delay = 2 }) => {
   const controls = useAnimation();
   const textArray = Array.isArray(text) ? text : [text];
   const ref = useRef(null);
@@ -34,25 +37,19 @@ export const AnimatedText = ({ text, className, once, display, animation = defau
 
   useEffect(() => {
     if (isInView) {
-      controls.start('visible');
+      // Apply the delay before starting animation
+      const timeoutId = setTimeout(() => controls.start('visible'), delay * 1000);
+
+      // Cleanup function to clear timeout on unmount
+      return () => clearTimeout(timeoutId);
     } else {
       controls.start('hidden');
     }
-  }, [isInView, controls]);
+  }, [isInView, controls, delay]); // Include delay in dependency array
 
   return (
     <div className={className}>
-      <span className="sr-only">{textArray.join(' ')}</span>
-      <motion.span
-        ref={ref}
-        initial="hidden"
-        animate={controls}
-        variants={{
-          visible: { transition: { staggerChildren: 0.1 } },
-          hidden: {},
-        }}
-        aria-hidden
-      >
+      <motion.span ref={ref} initial="hidden" animate={controls} variants={animation} aria-hidden>
         {textArray.map((line, lineIndex) => (
           <span className={display} key={`${line}-${lineIndex}`}>
             {line.split(' ').map((word, wordIndex) => (

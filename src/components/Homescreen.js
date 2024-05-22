@@ -25,7 +25,7 @@ export default function Homescreen() {
       <WorkList />
 
       <div className="w-fit mx-auto h-screen flex flex-col justify-center items-center gap-4">
-        <AnimatedTitle once display="block" text="Our Creative Partners" className="h3" />
+        <AnimatedTitle once display="block" text="Our Creative Partners" delay={0} className="h3" />
         <TextTypingAnimation
           text="We work as a strategic, creative partner to our clients, helping to shape their brands, tell their stories and move their audiences. From global brands to ambitious startups, our clients all have one thing in common… Great taste in creative agencies!"
           applyClass="h5 w-3/4 text-white"
@@ -98,7 +98,7 @@ export default function Homescreen() {
       <HorizontalScrollCarousel />
 
       <div className="w-fit mx-auto h-fit flex flex-col justify-center items-center gap-2 mt-48">
-        <AnimatedTitle once display="block" text="Your next design partner" className="h3 px-8" />
+        <AnimatedTitle once display="block" text="Your next design partner" delay={0} className="h3 px-8" />
         <TextTypingAnimation
           text="Let's collaborate and craft something extraordinary together."
           applyClass="h5 w-3/4 text-white"
