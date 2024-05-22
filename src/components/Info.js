@@ -1,5 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export default function Info() {
-	return <>Info Works aa</>;
+  return (
+    <>
+      <div className="fixed w-screen h-screen bg-black">Info</div>
+    </>
+  );
 }

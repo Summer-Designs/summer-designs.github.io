@@ -77,7 +77,7 @@ export default function Navbar() {
                 <a href="/contact" className="hover:text-accent">
                   Contact Us
                 </a>
-                <a href="/contact" className="body-text primary-button bg-accent text-white hover:bg-accentHover">
+                <a href="/contact" className=" py-3 px-6 rounded-full bg-accent text-white hover:bg-accentHover">
                   Let's Start a Project
                 </a>
               </div>
