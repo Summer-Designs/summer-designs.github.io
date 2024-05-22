@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import WorkImage from '../../assets/imgs/Work.png';
+import WorkImage from '../../assets/imgs/Work.webp';
 
 const Preloader = () => {
   const [progress, setProgress] = useState(0);
