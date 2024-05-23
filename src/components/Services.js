@@ -1,8 +1,11 @@
 import React from 'react';
+import Navbar from './Navbar';
+import PageTransition from './animation/PageTransition';
 
-export default function Services() {
+const Services = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
+      <Navbar fastload />
       {/* <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/40">
         <TextTypingAnimation
           text="Simply Share your vision, & will bring it to life."
@@ -56,6 +59,8 @@ export default function Services() {
         </div>
       </div> */}
       This works but need to import all the stuff!!!!
-    </>
+    </div>
   );
-}
+};
+
+export default PageTransition(Services);

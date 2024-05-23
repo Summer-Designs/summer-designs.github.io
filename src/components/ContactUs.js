@@ -1,6 +1,7 @@
 import React from 'react';
+import PageTransition from './animation/PageTransition';
 
-export default function ContactUs() {
+const ContactUs = () => {
   return (
     <>
       {/* <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/40">
@@ -58,4 +59,6 @@ export default function ContactUs() {
       This works but need to import all the stuff!!!!
     </>
   );
-}
+};
+
+export default PageTransition(ContactUs);

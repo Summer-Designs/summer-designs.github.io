@@ -10,7 +10,7 @@ const parentVariants = {
   hidden: { opacity: 0, y: '-4rem' },
 };
 
-export default function Navbar() {
+export default function Navbar({ fastload }) {
   const [isOpen, setOpen] = useState(false);
 
   const [hidden, setHidden] = useState(false);
@@ -44,10 +44,10 @@ export default function Navbar() {
           ease: [0.1, 0.25, 0.3, 1],
           duration: 0.6,
           staggerChildren: 0.05,
-          delay: 2,
+          delay: fastload ? 0 : 1,
         }}
       >
-        <div className="navbar-text flex flex-row justify-between items-center text-white lg:px-14">
+        <div className="navbar-text flex flex-row justify-between items-center text-white lg:px-14 ">
           <Link to="/" className="flex flex-row items-center text-accent gap-2">
             <img
               src={logo}
@@ -65,21 +65,24 @@ export default function Navbar() {
               exit={{ opacity: 0, scale: 0 }}
             >
               <div className="flex flex-col h5 text-left gap-3 p-8 bg-light/70 backdrop-blur-sm text-dark rounded-3xl">
-                <a href="/services" className="hover:text-accent">
+                <Link to="/" className="hover:text-accent">
+                  Home
+                </Link>
+                <Link to="/services" className="hover:text-accent">
                   Services
-                </a>
-                <a href="/work" className="hover:text-accent">
+                </Link>
+                <Link to="/work" className="hover:text-accent">
                   Work
-                </a>
-                <a href="/about" className="hover:text-accent">
+                </Link>
+                <Link to="/about" className="hover:text-accent">
                   About
-                </a>
-                <a href="/contact" className="hover:text-accent">
+                </Link>
+                <Link to="/contact" className="hover:text-accent">
                   Contact Us
-                </a>
-                <a href="/contact" className=" py-3 px-6 rounded-full bg-accent text-white hover:bg-accentHover">
+                </Link>
+                <Link to="/contact" className=" py-3 px-6 rounded-full bg-accent text-white hover:bg-accentHover">
                   Let's Start a Project
-                </a>
+                </Link>
               </div>
             </motion.div>
           )}

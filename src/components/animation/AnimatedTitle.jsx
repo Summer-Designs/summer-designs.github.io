@@ -29,7 +29,7 @@ type AnimatedTextProps = {
   },
 };
 
-export const AnimatedText = ({ text, className, once, display, animation = defaultAnimations, delay = 2 }) => {
+const AnimatedText = ({ text, className, once, display, animation = defaultAnimations, delay = 2 }) => {
   const controls = useAnimation();
   const textArray = Array.isArray(text) ? text : [text];
   const ref = useRef(null);
@@ -37,15 +37,12 @@ export const AnimatedText = ({ text, className, once, display, animation = defau
 
   useEffect(() => {
     if (isInView) {
-      // Apply the delay before starting animation
       const timeoutId = setTimeout(() => controls.start('visible'), delay * 1000);
-
-      // Cleanup function to clear timeout on unmount
       return () => clearTimeout(timeoutId);
     } else {
       controls.start('hidden');
     }
-  }, [isInView, controls, delay]); // Include delay in dependency array
+  }, [isInView, controls, delay]);
 
   return (
     <div className={className}>

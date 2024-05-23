@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css';
 import Navbar from './Navbar';
 import Banner from './Banner';
 import TextTypingAnimation from './animation/TextTypingAnimation';
@@ -8,8 +9,9 @@ import Footer from './Footer';
 
 import SCircle from '../assets/imgs/SCircle.svg';
 import HorizontalScrollCarousel from './animation/HorizontalScrollCarousel';
+import PageTransition from './animation/PageTransition';
 
-export default function Homescreen() {
+const Homescreen = () => {
   return (
     <>
       <Navbar />
@@ -112,4 +114,6 @@ export default function Homescreen() {
       <Footer />
     </>
   );
-}
+};
+
+export default PageTransition(Homescreen);
