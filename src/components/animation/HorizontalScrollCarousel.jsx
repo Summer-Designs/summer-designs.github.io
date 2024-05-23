@@ -12,7 +12,7 @@ const HorizontalScrollCarousel = () => {
   return (
     <section ref={targetRef} className="relative h-[150vh] lg:h-[200vh]">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-8 ml-16">
+        <motion.div style={{ x }} className="flex gap-8 ml-4 lg:ml-16">
           {cards.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
@@ -31,7 +31,7 @@ const Card = ({ card }) => {
       <div className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"></div>
       <div className="absolute inset-0 z-10 grid place-content-center">
         <div className="p-8 h5">{card.testimonial}</div>
-        <div className="p-4 body-text text-white/40 text-center">{card.name}</div>
+        <div className="p-4 body-text text-white/50 text-center">{card.name}</div>
       </div>
     </div>
   );

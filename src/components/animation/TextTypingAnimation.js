@@ -1,34 +1,34 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-const TextTypingAnimation = (e) => {
-  const textList = e.text.toString().split(' ');
+const TextTypingAnimation = ({ text, className, initialY = -400, duration = 1.5, delayMultiplier = 0.1 }) => {
+  const textList = text.toString().split(' ');
 
   const ref = useRef(null);
   const isInView = useInView(ref);
 
-  const mainControls = useAnimation();
+  const controls = useAnimation();
 
   useEffect(() => {
     if (isInView) {
-      mainControls.start({
+      controls.start({
         opacity: 1,
         y: 0,
       });
     }
-  });
+  }, [isInView, controls]);
 
   return (
-    <div ref={ref} className={e.applyClass + ' py-8'}>
+    <div ref={ref} className={className}>
       {textList.map((el, i) => (
         <motion.span
-          initial={{ opacity: 0, y: -400 }}
-          animate={mainControls}
-          transition={{
-            duration: 1.5,
-            delay: i / 9,
-          }}
           key={i}
+          initial={{ opacity: 0, y: initialY }}
+          animate={controls}
+          transition={{
+            duration,
+            delay: i * delayMultiplier,
+          }}
         >
           {el}{' '}
         </motion.span>

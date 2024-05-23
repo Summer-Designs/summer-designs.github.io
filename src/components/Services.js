@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar fastload />
-      {/* <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/40">
+      {/* <div className="w-full px-10 md:px-24 py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/50">
         <TextTypingAnimation
           text="Simply Share your vision, & will bring it to life."
           applyClass="h4 w-3/4 text-white text-left w-full"

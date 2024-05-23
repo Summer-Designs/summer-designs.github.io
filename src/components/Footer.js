@@ -9,12 +9,12 @@ export default function Footer() {
     <>
       <div className="h-screenpy-16 px-8 md:px-16 py-8 mb-12 lg:px-24 gap-8 md:gap-4 flex flex-col">
         <Link to="#" className="flex lg:hidden">
-          <span className="font-summerDreamsSans h5">SummerDesigns</span>
+          <span className="font-summerDreamsSans h4 mx-auto">SummerDesigns</span>
         </Link>
         <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-0">
           <div className="w-full lg:w-1/2 flex flex-col">
             <Link to="#" className="hidden lg:flex flex-row items-center text-white gap-4">
-              <span className="font-summerDreamsSans h5">SummerDesigns</span>
+              <span className="font-summerDreamsSans h5 mb-16">SummerDesigns</span>
             </Link>
             <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-2">
               <div className="w-fit lg:w-1/2 flex flex-col justify-between gap-4">
@@ -26,7 +26,7 @@ export default function Footer() {
                 </a>
               </div>
               <div className="w-fit lg:w-1/2 flex flex-col gap-1">
-                <div className="text-white/40 w-fit">Follow</div>
+                <div className="text-white/50 w-fit">Follow</div>
                 <div className="flex flex-col w-fit">
                   <a href="https://www.linkedin.com/company/summerdesigns/" className="hover:text-accent">
                     Linkedin

@@ -51,7 +51,7 @@
   }
 
   .body-text {
-    @apply font-[300] text-[14px] leading-[16px] md:text-[16px] md:leading-[18px];
+    @apply font-[300] text-[14px] leading-[20px] md:text-[16px] md:leading-[18px];
 
   }
 
