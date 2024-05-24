@@ -15,7 +15,7 @@ const ContactUs = () => {
       <div className="p-12 md:p-24 text-center w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
         <AnimatedTitle once delay={0} display="grid" text="WHO." className="h1" />
         <TextTypingAnimation
-          text="The Summer Design is a creative agency worked by two indivisuals Tirth Jivani & Krishna Kumar, who helps brands connect with people."
+          text="The Summer Design is a creative agency worked by two individual Tirth Jivani & Krishna Kumar, who help brands connect with people."
           className="body-text w-4/5 text-white py-2"
         />
       </div>

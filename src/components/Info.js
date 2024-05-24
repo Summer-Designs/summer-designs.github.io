@@ -5,23 +5,19 @@ import TextTypingAnimation from './animation/TextTypingAnimation';
 import PageTransition from './animation/PageTransition';
 import Footer from './Footer';
 import SCircle from '../assets/imgs/SCircle.svg';
-import UsPic from '../assets/imgs/Us.JPG';
 
 const Info = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar fastload />
 
-      {/* style={{ backgroundImage: `url(${UsPic})`  */}
-      <div className="p-12 md:p-24 text-center w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
+      <div className="p-12 md:p-24 text-center min-w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
         <AnimatedTitle once delay={0} display="grid" text="WHO." className="h1" />
         <TextTypingAnimation
-          text="The Summer Design is a creative agency worked by two indivisuals Tirth Jivani & Krishna Kumar, who helps brands connect with people."
+          text="The Summer Design is a creative agency worked by two individual Tirth Jivani & Krishna Kumar, who help brands connect with people."
           className="body-text w-4/5 text-white py-2"
         />
       </div>
-
-      {/* <div className="w-fit mx-auto h-screen flex flex-col justify-center items-center py-24"></div> */}
 
       <div className="w-full px-12 lg:px-24 py-12 md:py-24 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/50">
         <TextTypingAnimation text="Why Choose Us?" className="h4 text-white text-left w-full" />

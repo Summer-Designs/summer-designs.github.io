@@ -15,10 +15,10 @@ const App = () => {
         <AnimatePresence mode="wait">
           <Routes>
             <Route path="/" element={<Homescreen />}></Route>
-            <Route path="/services" element={<Services />}></Route>
-            <Route path="/work" element={<Work />}></Route>
-            <Route path="/about" element={<Info />}></Route>
-            <Route path="/contact" element={<ContactUs />}></Route>
+            <Route path="/what" element={<Services />}></Route>
+            <Route path="/what" element={<Work />}></Route>
+            <Route path="/who" element={<Info />}></Route>
+            <Route path="/where" element={<ContactUs />}></Route>
 
             <Route path="/404" element={<PageNotFound />}></Route>
             <Route path="*" exact={true} element={<Navigate replace to="/404" />}></Route>

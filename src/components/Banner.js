@@ -2,19 +2,19 @@ import React from 'react';
 import BackgroundVideo from '../assets/videos/background.mp4';
 import AnimatedTitle from './animation/AnimatedTitle';
 import { motion } from 'framer-motion';
+import The from '../assets/imgs/The.svg';
 
 const Banner = () => {
   return (
     <div className="relative flex items-center justify-center h-screen overflow-hidden">
       <div className="z-10 w-fit mx-auto h-screen flex flex-col justify-center items-center">
-        <motion.h3
+        <motion.div
           initial={{ y: -100, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: 'spring', duration: 1, delay: 1 }}
-          className="font-summerWind font-[400] z-10 mb-4"
         >
-          The
-        </motion.h3>
+          <img alt="The Svg" src={The} className="w-[12vw] md:w-[10vw] lg:w-[8vw] mb-4 md:mb-8" />
+        </motion.div>
         <AnimatedTitle once delay={1} display="grid" text="SUMMER DESIGNS." className="h1" />
       </div>
       <motion.div
