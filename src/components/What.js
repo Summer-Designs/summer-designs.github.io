@@ -4,7 +4,7 @@ import { workListData } from '../data/WorkListData';
 import Navbar from './Navbar';
 import PageTransition from './animation/PageTransition';
 
-const Work = () => {
+const What = () => {
   return (
     <>
       <Navbar fastload />
@@ -31,4 +31,4 @@ const Work = () => {
   );
 };
 
-export default PageTransition(Work);
+export default PageTransition(What);

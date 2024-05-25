@@ -10,7 +10,7 @@ import HorizontalScrollCarousel from './animation/HorizontalScrollCarousel';
 import PageTransition from './animation/PageTransition';
 import SCircle from '../assets/imgs/SCircle.svg';
 
-const Homescreen = () => {
+const Home = () => {
   return (
     <>
       <Navbar />
@@ -115,4 +115,4 @@ const Homescreen = () => {
   );
 };
 
-export default PageTransition(Homescreen);
+export default PageTransition(Home);

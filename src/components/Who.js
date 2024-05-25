@@ -6,7 +6,7 @@ import PageTransition from './animation/PageTransition';
 import Footer from './Footer';
 import SCircle from '../assets/imgs/SCircle.svg';
 
-const Info = () => {
+const Who = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar fastload />
@@ -89,4 +89,4 @@ const Info = () => {
   );
 };
 
-export default PageTransition(Info);
+export default PageTransition(Who);
