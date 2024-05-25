@@ -8,13 +8,13 @@ import TextTypingAnimation from './animation/TextTypingAnimation';
 import Footer from './Footer';
 import SCircle from '../assets/imgs/SCircle.svg';
 
-const What = () => {
+const How = () => {
   return (
     <>
       <Navbar fastload />
 
       <div className="p-12 md:p-24 text-center min-w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
-        <AnimatedTitle once delay={0} display="grid" text="WHAT." className="h1" />
+        <AnimatedTitle once delay={0} display="grid" text="HOW." className="h1" />
         <TextTypingAnimation
           text="The Summer Design is a creative agency worked by two individual Tirth Jivani & Krishna Kumar, who help brands connect with people."
           className="body-text w-4/5 text-white py-2"
@@ -64,4 +64,4 @@ const What = () => {
   );
 };
 
-export default PageTransition(What);
+export default PageTransition(How);

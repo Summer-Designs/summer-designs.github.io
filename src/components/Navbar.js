@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../assets/logos/Logo.svg';
 import { Cross as Hamburger } from 'hamburger-react';
 import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { FiArrowUpRight } from 'react-icons/fi';
 
 const parentVariants = {
   initial: { y: -100, opacity: 0 },
@@ -55,37 +56,68 @@ export default function Navbar({ fastload }) {
               alt="Logo"
             />
           </Link>
-          <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
-          {isOpen && !hidden && (
-            <motion.div
-              className={'fixed z-50 right-[50px] top-[70px] lg:right-[100px] lg:top-[70px]'}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, ease: 'backIn', staggerChildren: 0.25 }}
-              exit={{ opacity: 0, scale: 0 }}
-            >
-              <div className="flex flex-col h5 text-left gap-3 p-8 bg-light/70 backdrop-blur-sm text-dark rounded-3xl">
-                <Link to="/" className="hover:text-accent">
-                  Home
-                </Link>
-                <Link to="/services" className="hover:text-accent">
-                  Services
-                </Link>
-                <Link to="/work" className="hover:text-accent">
-                  Work
-                </Link>
-                <Link to="/about" className="hover:text-accent">
-                  About
-                </Link>
-                <Link to="/contact" className="hover:text-accent">
-                  Contact Us
-                </Link>
-                <Link to="/contact" className=" py-3 px-6 rounded-full bg-accent text-white hover:bg-accentHover">
-                  Let's Start a Project
-                </Link>
-              </div>
-            </motion.div>
-          )}
+          <div className="hidden lg:flex flex-row h5 text-left gap-10 p-8 body-text">
+            <Link to="/" className="hover:text-accent">
+              Home
+            </Link>
+            <Link to="/why" className="hover:text-accent">
+              Why
+            </Link>
+            <Link to="/what" className="hover:text-accent">
+              What
+            </Link>
+            <Link to="/who" className="hover:text-accent">
+              Who
+            </Link>
+            <Link to="/how" className="hover:text-accent">
+              How
+            </Link>
+            <Link to="/where" className="hover:text-accent">
+              Where
+            </Link>
+            <Link to="mailto:thesummerdesign@gmail.com" className="hover:text-accent body-text">
+              <FiArrowUpRight className="text-[20px]" />
+            </Link>
+          </div>
+          <div className="flex lg:hidden">
+            <Hamburger size={18} toggled={isOpen} toggle={setOpen} />
+            {isOpen && !hidden && (
+              <motion.div
+                className={'fixed z-50 right-[50px] top-[70px] lg:right-[100px] lg:top-[70px]'}
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, ease: 'backIn', staggerChildren: 0.25 }}
+                exit={{ opacity: 0, scale: 0 }}
+              >
+                <div className="flex flex-col h5 text-right w-fit gap-3 p-8 bg-black/70 backdrop-blur-sm text-white rounded-3xl">
+                  <Link to="/" className="hover:text-accent">
+                    Home
+                  </Link>
+                  <Link to="/why" className="hover:text-accent">
+                    Why
+                  </Link>
+                  <Link to="/what" className="hover:text-accent">
+                    What
+                  </Link>
+                  <Link to="/who" className="hover:text-accent">
+                    Who
+                  </Link>
+                  <Link to="/how" className="hover:text-accent">
+                    How
+                  </Link>
+                  <Link to="/where" className="hover:text-accent">
+                    Where
+                  </Link>
+                  <Link
+                    to="mailto:thesummerdesign@gmail.com"
+                    className="hover:text-accent body-text font-semibold mt-8"
+                  >
+                    Let's build your vision
+                  </Link>
+                </div>
+              </motion.div>
+            )}
+          </div>
         </div>
       </motion.nav>
     </>

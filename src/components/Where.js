@@ -6,14 +6,14 @@ import PageTransition from './animation/PageTransition';
 import Footer from './Footer';
 import SCircle from '../assets/imgs/SCircle.svg';
 
-const ContactUs = () => {
+const Where = () => {
   return (
     <div className="overflow-x-hidden">
       <Navbar fastload />
 
       {/* style={{ backgroundImage: `url(${UsPic})`  */}
       <div className="p-12 md:p-24 text-center w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
-        <AnimatedTitle once delay={0} display="grid" text="WHO." className="h1" />
+        <AnimatedTitle once delay={0} display="grid" text="WHERE." className="h1" />
         <TextTypingAnimation
           text="The Summer Design is a creative agency worked by two individual Tirth Jivani & Krishna Kumar, who help brands connect with people."
           className="body-text w-4/5 text-white py-2"
@@ -92,4 +92,4 @@ const ContactUs = () => {
   );
 };
 
-export default PageTransition(ContactUs);
+export default PageTransition(Where);

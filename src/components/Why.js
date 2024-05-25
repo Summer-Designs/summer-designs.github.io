@@ -1,6 +1,4 @@
 import React from 'react';
-import '../index.css';
-import { workListData } from '../data/WorkListData';
 import Navbar from './Navbar';
 import PageTransition from './animation/PageTransition';
 import AnimatedTitle from './animation/AnimatedTitle';
@@ -8,37 +6,17 @@ import TextTypingAnimation from './animation/TextTypingAnimation';
 import Footer from './Footer';
 import SCircle from '../assets/imgs/SCircle.svg';
 
-const What = () => {
+const Why = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar fastload />
 
       <div className="p-12 md:p-24 text-center min-w-screen h-screen flex flex-col justify-center items-center bg-black overflow-x-hidden">
-        <AnimatedTitle once delay={0} display="grid" text="WHAT." className="h1" />
+        <AnimatedTitle once delay={0} display="grid" text="WHY." className="h1" />
         <TextTypingAnimation
           text="The Summer Design is a creative agency worked by two individual Tirth Jivani & Krishna Kumar, who help brands connect with people."
           className="body-text w-4/5 text-white py-2"
         />
-      </div>
-
-      <div className="grid h-screen grid-cols-2 gap-8 my-16 mx-8 md:mx-16 lg:mx-24">
-        {workListData.map(([tag, title, url, applyClass, showHomescreen]) => (
-          <div className={'flex flex-col'}>
-            <div className="relative h-48 lg:h-96 overflow-hidden bg-no-repeat rounded-3xl">
-              <img
-                src={url}
-                className=" h-max transition duration-300 ease-in-out hover:scale-110 hover:opacity-70"
-                alt="Work"
-              />
-            </div>
-            <div className="p-4">
-              <div className="flex flex-row justify-between items-center text-white">
-                <div className="uppercase body-text">{tag}</div>
-                <h5>{title}</h5>
-              </div>
-            </div>
-          </div>
-        ))}
       </div>
 
       <div className="w-fit mx-auto h-fit flex flex-col justify-center items-center gap-2 mt-48 px-4 lg:px-24">
@@ -60,8 +38,8 @@ const What = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
-export default PageTransition(What);
+export default PageTransition(Why);
