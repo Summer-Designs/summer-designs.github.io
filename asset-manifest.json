@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.14be26c5.css",
-    "main.js": "/static/js/main.abf0f23a.js",
-    "static/js/453.77430dfc.chunk.js": "/static/js/453.77430dfc.chunk.js",
+    "main.css": "/static/css/main.e823d404.css",
+    "main.js": "/static/js/main.02d9a34e.js",
     "static/media/Work.jpg": "/static/media/Work.eda908f7663e224e7eb6.jpg",
     "static/media/background.mp4": "/static/media/background.649203ebd20637afa385.mp4",
+    "static/media/Work.webp": "/static/media/Work.10bcd6cb8b9c96a48782.webp",
     "static/media/SpaceGrotesk.ttf": "/static/media/SpaceGrotesk.5771010795a77ba7459b.ttf",
     "static/media/SummerDreamSans.ttf": "/static/media/SummerDreamSans.f140242b3eefdc1dcb61.ttf",
     "static/media/Logo.svg": "/static/media/Logo.7891a5dd6a92dc7e1d5ce878e8de1e5a.svg",
     "static/media/The.svg": "/static/media/The.7b3c901245ceb9e945c89c7bc585022c.svg",
     "index.html": "/index.html",
     "static/media/SCircle.svg": "/static/media/SCircle.d0ff180056de1520b20ae846a432d6c4.svg",
-    "main.14be26c5.css.map": "/static/css/main.14be26c5.css.map",
-    "main.abf0f23a.js.map": "/static/js/main.abf0f23a.js.map",
-    "453.77430dfc.chunk.js.map": "/static/js/453.77430dfc.chunk.js.map"
+    "main.e823d404.css.map": "/static/css/main.e823d404.css.map",
+    "main.02d9a34e.js.map": "/static/js/main.02d9a34e.js.map"
   },
   "entrypoints": [
-    "static/css/main.14be26c5.css",
-    "static/js/main.abf0f23a.js"
+    "static/css/main.e823d404.css",
+    "static/js/main.02d9a34e.js"
   ]
 }
