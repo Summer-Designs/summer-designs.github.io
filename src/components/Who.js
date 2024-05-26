@@ -78,7 +78,7 @@ const Who = () => {
           text="Let's work together to create something extraordinary. Contact us today to discuss your project and discover how The Summer Design can help you achieve your goals."
           className="body-text text-center w-3/4 text-white py-4"
         />
-        <a href="https://calendly.com/thesummerdesign/1on1" className="primary-button">
+        <a href="https://calendly.com/thesummerdesign/1on1" target="_blank" rel="noreferrer" className="primary-button">
           Book FREE 1 on 1
         </a>
         <img alt="The SummerDesign Element" src={SCircle} className="my-12 -z-10" />

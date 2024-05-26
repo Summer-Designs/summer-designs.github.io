@@ -37,7 +37,7 @@ export default function Navbar({ fastload }) {
   return (
     <>
       <motion.nav
-        className={'fixed top-4 rounded-full p-4 px-12 z-50 w-full'}
+        className={'fixed top-4 rounded-full px-12 md:px-16 lg:px-24 z-50 w-full'}
         variants={parentVariants}
         initial={'initial'}
         animate={hidden ? 'hidden' : 'visible'}
@@ -48,7 +48,7 @@ export default function Navbar({ fastload }) {
           delay: fastload ? 0 : 1,
         }}
       >
-        <div className="navbar-text flex flex-row justify-between items-center text-white lg:px-14 ">
+        <div className="navbar-text flex flex-row justify-between items-center text-white">
           <Link to="/" className="flex flex-row items-center text-accent gap-2">
             <img
               src={logo}
