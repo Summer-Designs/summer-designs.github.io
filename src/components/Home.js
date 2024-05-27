@@ -41,7 +41,7 @@ const Home = () => {
 
       <section>
         <div className="w-fit mx-auto flex flex-col justify-center items-center gap-4">
-          <AnimatedTitle once display="block" text="Ready to Transform Your Brand?" delay={0} className="h4" />
+          <AnimatedTitle once display="block" text="Ready to Transform Your Brand?" delay={0} className="h3 w-[70%]" />
           <TextTypingAnimation
             text="Let's create something amazing together."
             className="body-text text-center w-3/4 text-white"
@@ -64,7 +64,10 @@ const Home = () => {
 
       <section className="">
         <div className="w-full px-10 md:px-24 py-36 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/50">
-          <TextTypingAnimation text="Share Your Dream, We'll Craft It to Perfection" className="h4 text-white w-full" />
+          <TextTypingAnimation
+            text="Share Your Dream, We'll Craft It to Perfection"
+            className="h3 w-[80%] text-white"
+          />
           <div className="text-center w-full">*But we don't design on CANVA</div>
           <div className="flex flex-col lg:flex-row justify-center w-full lg:px-16 mt-8 gap-12 lg:gap-24">
             <div className="flex flex-col gap-2">
