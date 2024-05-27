@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { motion, useInView, useAnimation } from 'framer-motion';
 
-const TextTypingAnimation = ({ text, className, initialY = -400, duration = 1.5, delayMultiplier = 0.1 }) => {
+const TextTypingAnimation = ({ text, className, initialY = -400, duration = 2, delayMultiplier = 0.1 }) => {
   const textList = text.toString().split(' ');
 
   const ref = useRef(null);

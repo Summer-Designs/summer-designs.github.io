@@ -4,49 +4,63 @@ import Navbar from './Navbar';
 import Banner from './Banner';
 import TextTypingAnimation from './animation/TextTypingAnimation';
 import AnimatedTitle from './animation/AnimatedTitle';
-import WorkList from './WorkList';
 import Footer from './Footer';
-import HorizontalScrollCarousel from './animation/HorizontalScrollCarousel';
+import HorizontalScrollCarousel from './ui/HorizontalScrollCarousel';
 import PageTransition from './animation/PageTransition';
 import SCircle from '../assets/imgs/SCircle.svg';
+import CustomButton from './ui/CustomButton';
+import { motion } from 'framer-motion';
+// import WorkList from './WorkList';
+// import { content } from '../data/services';
+// import { StickyScroll } from './ui/StickyScroll.tsx';
+// import { CustomScroll } from 'react-custom-scroll';
 
 const Home = () => {
   return (
     <>
-      <Navbar />
+      <motion.div initial={{ y: -200 }} animate={{ y: 0 }} transition={{ delay: 1, duration: 0.6 }}>
+        <Navbar />
+      </motion.div>
 
       <Banner />
 
       <section>
-        <div className="w-fit mx-auto flex flex-col justify-center items-center">
+        <div className="w-fit mx-auto flex flex-col justify-center items-center mt-48">
           <TextTypingAnimation
-            text="The Summer Design is a creative agency that helps brands connect with people, through iconic design, animation and visual storytelling."
-            className="h2 w-3/4 text-white"
+            text="We believe branding is an art form, essential for creating a unique identity. Our creative solutions — from
+            poster graphics and illustrations to websites with professional story building — ensure your brand stands
+            out with a breezy summer vibe."
+            className="h4 w-3/4 text-white"
           />
         </div>
       </section>
 
-      <section>
+      {/* <section>
         <WorkList />
-      </section>
+      </section> */}
 
       <section>
         <div className="w-fit mx-auto flex flex-col justify-center items-center gap-4">
-          <AnimatedTitle once display="block" text="Our Creative Partners" delay={0} className="h3" />
+          <AnimatedTitle once display="block" text="Ready to Transform Your Brand?" delay={0} className="h4" />
           <TextTypingAnimation
-            text="We work as a strategic, creative partner to our clients, helping to shape their brands, tell their stories and move their audiences. From global brands to ambitious startups, our clients all have one thing in common… Great taste in creative agencies!"
+            text="Let's create something amazing together."
             className="body-text text-center w-3/4 text-white"
           />
-          <a
+          <CustomButton href="https://calendly.com/thesummerdesign/1on1" />
+          {/* <a
             href="https://calendly.com/thesummerdesign/1on1"
             target="_blank"
             rel="noreferrer"
             className="primary-button mb-8"
           >
             Book FREE 1 on 1
-          </a>
+          </a> */}
         </div>
       </section>
+
+      {/* <section>
+          <StickyScroll content={content} />
+        </section> */}
 
       <section className="">
         <div className="w-full px-10 md:px-24 py-36 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/50">
@@ -104,7 +118,7 @@ const Home = () => {
         <div className="w-fit mx-auto flex flex-col justify-center items-center">
           <TextTypingAnimation
             text="We are committed to enhancing your brand's essence and fortifying the connection with your audience through collaborative efforts to create something remarkable."
-            className="h2 w-3/4 text-white"
+            className="h4 w-3/4 text-white"
           />
         </div>
       </section>
@@ -117,10 +131,8 @@ const Home = () => {
           text="Let's collaborate and craft something extraordinary together."
           className="body-text text-center w-3/4 text-white py-4"
         />
-        <a href="https://calendly.com/thesummerdesign/1on1" target="_blank" rel="noreferrer" className="primary-button">
-          Book FREE 1 on 1
-        </a>
-        <img alt="The SummerDesign Element" src={SCircle} className="my-12 -z-10" />
+        <CustomButton href="https://calendly.com/thesummerdesign/1on1" />
+        <img alt="The SummerDesign Element" src={SCircle} className="mt-12 -z-10" />
       </div>
 
       <Footer />
