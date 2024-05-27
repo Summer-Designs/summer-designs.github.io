@@ -15,7 +15,8 @@ const Banner = () => {
         >
           <img alt="The Svg" src={The} className="w-[12vw] md:w-[10vw] lg:w-[8vw] mb-4 md:mb-8" />
         </motion.div>
-        <AnimatedTitle once delay={1} display="grid" text="SUMMER DESIGNS." className="h1" />
+        <AnimatedTitle once delay={1} display="grid" text="SUMMER" className="h1" />
+        <AnimatedTitle once delay={1} display="grid" text="DESIGNS." className="h1 text-transparent font-outline-2" />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
