@@ -2,18 +2,16 @@ import React from 'react';
 import '../index.css';
 import Navbar from './Navbar';
 import Banner from './Banner';
-import TextTypingAnimation from './animation/TextTypingAnimation';
-import AnimatedTitle from './animation/AnimatedTitle';
+import ContentReveal from './animation/ContentReveal';
+import TitleReveal from './animation/TitleReveal';
 import Footer from './Footer';
 import HorizontalScrollCarousel from './ui/HorizontalScrollCarousel';
 import PageTransition from './animation/PageTransition';
 import SCircle from '../assets/imgs/SCircle.svg';
 import CustomButton from './ui/CustomButton';
 import { motion } from 'framer-motion';
-// import WorkList from './WorkList';
-// import { content } from '../data/services';
-// import { StickyScroll } from './ui/StickyScroll.tsx';
-// import { CustomScroll } from 'react-custom-scroll';
+import TextRevealByWord from './animation/TextRevealByWord.tsx';
+// import Gallery from './ui/Gallery.tsx';
 
 const Home = () => {
   return (
@@ -24,37 +22,22 @@ const Home = () => {
 
       <Banner />
 
-      <section>
-        <div className="w-fit mx-auto flex flex-col justify-center items-center mt-48">
-          <TextTypingAnimation
-            text="We believe branding is an art form, essential for creating a unique identity. Our creative solutions — from
+      <div>
+        <TextRevealByWord
+          text="We believe branding is an art form, essential for creating a unique identity. Our creative solutions — from
             poster graphics and illustrations to websites with professional story building — ensure your brand stands
-            out with a breezy summer vibe."
-            className="h4 w-3/4 text-white"
-          />
-        </div>
-      </section>
-
-      {/* <section>
-        <WorkList />
-      </section> */}
+            out with a breezy summer vibe"
+        />
+      </div>
 
       <section>
-        <div className="w-fit mx-auto flex flex-col justify-center items-center gap-4">
-          <AnimatedTitle once display="block" text="Ready to Transform Your Brand?" delay={0} className="h3 w-[70%]" />
-          <TextTypingAnimation
+        <div className="w-fit min-h-screen mx-auto flex flex-col justify-center items-center gap-4">
+          <TitleReveal once display="block" text="Ready to Transform Your Brand?" delay={0} className="h4 w-[70%]" />
+          <ContentReveal
             text="Let's create something amazing together."
             className="body-text text-center w-3/4 text-white"
           />
           <CustomButton href="https://calendly.com/thesummerdesign/1on1" />
-          {/* <a
-            href="https://calendly.com/thesummerdesign/1on1"
-            target="_blank"
-            rel="noreferrer"
-            className="primary-button mb-8"
-          >
-            Book FREE 1 on 1
-          </a> */}
         </div>
       </section>
 
@@ -62,12 +45,9 @@ const Home = () => {
           <StickyScroll content={content} />
         </section> */}
 
-      <section className="">
+      <section>
         <div className="w-full px-10 md:px-24 py-36 flex flex-col justify-center items-center gap-8 bg-[#491926] text-white/50">
-          <TextTypingAnimation
-            text="Share Your Dream, We'll Craft It to Perfection"
-            className="h3 w-[80%] text-white"
-          />
+          <ContentReveal text="Share Your Dream, We'll Craft It to Perfection" className="h4 w-[80%] text-white" />
           <div className="text-center w-full">*But we don't design on CANVA</div>
           <div className="flex flex-col lg:flex-row justify-center w-full lg:px-16 mt-8 gap-12 lg:gap-24">
             <div className="flex flex-col gap-2">
@@ -118,19 +98,14 @@ const Home = () => {
       </section>
 
       <section>
-        <div className="w-fit mx-auto flex flex-col justify-center items-center">
-          <TextTypingAnimation
-            text="We are committed to enhancing your brand's essence and fortifying the connection with your audience through collaborative efforts to create something remarkable."
-            className="h4 w-3/4 text-white"
-          />
-        </div>
+        <TextRevealByWord text="We are committed to enhancing your brand's essence and fortifying the connection with your audience through collaborative efforts to create something remarkable." />
       </section>
 
       <HorizontalScrollCarousel />
 
       <div className="w-fit mx-auto h-fit flex flex-col justify-center items-center gap-2 mt-48">
-        <AnimatedTitle once display="block" text="Your next design partner" delay={0} className="h3 px-8" />
-        <TextTypingAnimation
+        <TitleReveal once display="block" text="Your next design partner" delay={0} className="h4 px-8" />
+        <ContentReveal
           text="Let's collaborate and craft something extraordinary together."
           className="body-text text-center w-3/4 text-white py-4"
         />

@@ -1,6 +1,6 @@
 import React from 'react';
 import BackgroundVideo from '../assets/videos/background.mp4';
-import AnimatedTitle from './animation/AnimatedTitle';
+import TitleReveal from './animation/TitleReveal';
 import { motion } from 'framer-motion';
 import The from '../assets/imgs/The.svg';
 
@@ -15,8 +15,8 @@ const Banner = () => {
         >
           <img alt="The Svg" src={The} className="w-[12vw] md:w-[10vw] lg:w-[8vw] mb-4 md:mb-8" />
         </motion.div>
-        <AnimatedTitle once delay={1} display="grid" text="SUMMER" className="h1" />
-        <AnimatedTitle once delay={1} display="grid" text="DESIGNS." className="h1 text-transparent font-outline-2" />
+        <TitleReveal once delay={1} display="grid" text="SUMMER" className="h1" />
+        <TitleReveal once delay={1.5} display="grid" text="DESIGNS." className="h1 text-transparent font-outline-2" />
       </div>
       <motion.div
         initial={{ opacity: 0 }}
