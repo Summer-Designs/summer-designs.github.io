@@ -78,7 +78,7 @@
   }
 
   section {
-    @apply body-text py-12 md:py-24 lg:py-48
+    @apply body-text py-12 md:py-24 lg:py-48 min-h-screen;
   }
 }
 

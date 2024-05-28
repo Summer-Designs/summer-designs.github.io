@@ -6,12 +6,15 @@ import { FiArrowUpRight } from 'react-icons/fi';
 export default function Footer() {
   return (
     <div
-      className="relative h-[520px] sm:h-[580px] md:h-[620px] lg:h-[720px] 2xl:h-screen"
+      className="relative h-[620px] sm:h-[685px] md:h-[720px] lg:h-screen "
       style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
     >
-      <div className="fixed bottom-0 h-[520px] sm:h-[580px] md:h-[620px] lg:h-[720px] 2xl:h-screen w-full bg-dark">
+      <div className="fixed bottom-0 h-[620px] sm:h-[685px] md:h-[720px] lg:h-screen w-full bg-dark">
         <div className="h-screen py-16 px-8 md:px-16 lg:px-24 gap-8 flex flex-col">
           <div className="flex flex-col gap-8">
+            <Link to="/">
+              <div className="text-left h4 hover:text-accent">Home</div>
+            </Link>
             <Link to="/about">
               <div className="text-left h4 hover:text-accent">About</div>
             </Link>

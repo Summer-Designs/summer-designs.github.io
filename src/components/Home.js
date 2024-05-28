@@ -11,7 +11,6 @@ import SCircle from '../assets/imgs/SCircle.svg';
 import CustomButton from './ui/CustomButton';
 import { motion } from 'framer-motion';
 import TextRevealByWord from './animation/TextRevealByWord.tsx';
-// import Gallery from './ui/Gallery.tsx';
 
 const Home = () => {
   return (
