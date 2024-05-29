@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.d8657f64.css",
-    "main.js": "/static/js/main.1fd940fc.js",
+    "main.css": "/static/css/main.28ce51d1.css",
+    "main.js": "/static/js/main.72095d00.js",
     "static/media/background.mp4": "/static/media/background.312e0a186c77ad56a537.mp4",
-    "static/media/Work 1.png": "/static/media/Work 1.a95731ca32c85bab498b.png",
+    "static/media/Work2.jpg": "/static/media/Work2.eda908f7663e224e7eb6.jpg",
+    "static/media/Work1.png": "/static/media/Work1.a95731ca32c85bab498b.png",
     "static/media/SpaceGrotesk.ttf": "/static/media/SpaceGrotesk.5771010795a77ba7459b.ttf",
     "static/media/SummerDreamSans.ttf": "/static/media/SummerDreamSans.f140242b3eefdc1dcb61.ttf",
     "static/media/Logo.svg": "/static/media/Logo.7891a5dd6a92dc7e1d5ce878e8de1e5a.svg",
     "index.html": "/index.html",
     "static/media/The.svg": "/static/media/The.7b3c901245ceb9e945c89c7bc585022c.svg",
     "static/media/SCircle.svg": "/static/media/SCircle.d0ff180056de1520b20ae846a432d6c4.svg",
-    "main.d8657f64.css.map": "/static/css/main.d8657f64.css.map",
-    "main.1fd940fc.js.map": "/static/js/main.1fd940fc.js.map"
+    "main.28ce51d1.css.map": "/static/css/main.28ce51d1.css.map",
+    "main.72095d00.js.map": "/static/js/main.72095d00.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8657f64.css",
-    "static/js/main.1fd940fc.js"
+    "static/css/main.28ce51d1.css",
+    "static/js/main.72095d00.js"
   ]
 }
