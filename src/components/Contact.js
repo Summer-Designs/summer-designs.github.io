@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
-import Gallery from './ui/Gallery.tsx';
+// import Gallery from './ui/Gallery.tsx';
 import TitleReveal from './animation/TitleReveal';
 import PageTransition from './animation/PageTransition';
 
