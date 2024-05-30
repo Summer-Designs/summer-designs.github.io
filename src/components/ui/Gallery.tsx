@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import Lenis from 'lenis';
 import { images } from '../../data/workImages';
 import './gallery.css';
 import { motion, useScroll, useTransform } from 'framer-motion';
@@ -19,19 +18,11 @@ const Gallery = () => {
   const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 3]);
 
   useEffect(() => {
-    const lenis = new Lenis();
-    const raf = (time) => {
-      lenis.raf(time);
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
-
     const resize = () => {
       setDimension({ width: window.innerWidth, height: window.innerHeight });
     };
 
     window.addEventListener('resize', resize);
-    requestAnimationFrame(raf);
     resize();
 
     return () => {

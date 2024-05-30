@@ -1,9 +1,18 @@
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 import '../../index.css';
+
+const ScrollToTop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return null;
+};
 
 const PageTransition = (OgComponent) => {
   return () => (
     <>
+      <ScrollToTop />
       <OgComponent />
       <motion.div
         className="slide-in z-[1000]"

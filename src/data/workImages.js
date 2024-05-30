@@ -1,9 +1,9 @@
-import Work1 from '../assets/imgs/prj/Work1.png';
+// import Work2 from '../assets/imgs/prj/Work2.png';
 import Work2 from '../assets/imgs/prj/Work2.jpg';
 
 export const images = [
   {
-    src: Work1,
+    src: Work2,
     id: 1,
   },
   {
@@ -11,7 +11,7 @@ export const images = [
     id: 2,
   },
   {
-    src: Work1,
+    src: Work2,
     id: 3,
   },
   {
@@ -19,7 +19,7 @@ export const images = [
     id: 4,
   },
   {
-    src: Work1,
+    src: Work2,
     id: 5,
   },
   {
@@ -27,7 +27,7 @@ export const images = [
     id: 6,
   },
   {
-    src: Work1,
+    src: Work2,
     id: 7,
   },
   {
@@ -35,7 +35,7 @@ export const images = [
     id: 8,
   },
   {
-    src: Work1,
+    src: Work2,
     id: 9,
   },
   {
@@ -43,7 +43,7 @@ export const images = [
     id: 10,
   },
   {
-    src: Work1,
+    src: Work2,
     id: 11,
   },
   {

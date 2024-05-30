@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 @font-face {
   font-family: "Summer-Dreams-Sans";
   src: url("../src/assets/fonts/SummerDreamSans.ttf");
@@ -98,6 +104,7 @@
   border-radius: 100vw;
   height: 5vh;
 }
+
 
 .slide-in {
   position: fixed;
